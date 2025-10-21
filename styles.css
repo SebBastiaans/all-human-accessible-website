@@ -74,6 +74,26 @@ main{
     background-color: #F6F5F5;
 }
 
+/* ai button -------------------------------*/
+.ai-button{
+    position:fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index:10;
+    width:6em;
+    aspect-ratio:1;
+    border-radius:50%;
+    padding:.5em 1em;
+    appearance:none;
+    background-color: white;
+    border:solid .225em #E0B000;
+    font-size:1em;
+    color: #E0B000;
+    box-shadow: 0 0 20px black;
+    cursor:pointer;
+}
+/* ----------------------------------------- */
+
 .dropdown{
     text-align: center;
 }
@@ -149,6 +169,10 @@ main{
     }
 }
 
+img .users{
+    width: 10px;
+}
+
 .background-grid{
     display: grid;
     grid-template-rows: repeat(1fr);
@@ -201,6 +225,7 @@ main{
     height: 50px;
     width: 50px;
     border: none;
+    z-index: 1;
 }
 
 .add-list img{
