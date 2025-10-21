@@ -169,10 +169,6 @@ main{
     }
 }
 
-img .users{
-    width: 10px;
-}
-
 .background-grid{
     display: grid;
     grid-template-rows: repeat(1fr);
@@ -188,30 +184,39 @@ img .users{
     color: #E0B000;
 }
 
+/* product -------------------------------------- */
 .product-grid{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     padding: 20px;
     margin-inline: 10px;
 
     @media (min-width: 678px) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     }
 
     @media (min-width: 1024px) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     }
+
+    @media (min-width: 1770px) {
+    grid-template-columns: repeat(5, 1fr);
+    }
+
 }
 
 .product{ 
     position: relative;
     background-color: white ;
     padding: 8px;
+    width: 90%;
+    max-width: 300px;
 }
 
 .product-grid img{
-    height: 400px;
+    display: block;
+    height: 250px;
     width: 100%;
     object-fit: cover;
 }
@@ -235,7 +240,7 @@ img .users{
 
 .tags{
     position: absolute;
-    bottom: 93px;
+    bottom: 133px;
     left: 10px;
     flex-wrap: wrap;
 }
