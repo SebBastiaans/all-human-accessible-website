@@ -186,6 +186,10 @@ main{
     color: #E0B000;
 }
 
+h4{
+    font-weight: normal;
+}
+
 /* product -------------------------------------- */
 .product-grid{
     display: grid;
