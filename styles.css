@@ -342,6 +342,11 @@ footer a{
     color: white;
 }
 
+footer input{
+    border: 1px solid black;
+
+}
+
 .footer-links{
     color: white;
 }
