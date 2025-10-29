@@ -85,8 +85,29 @@ main{
     width:8em;
     aspect-ratio:1;
     border-radius:50%;
-    background-color: white;
-    border:solid .225em #E0B000;
+    /* background-color: red; */
+
+    /* border:solid .225em #E0B000; */
+    /* border:solid .225em transparent; */
+    appearance: none;
+    border:none;
+
+    background-image: 
+        radial-gradient(
+            closest-side circle,
+            white calc(100% - .225em),
+            transparent 0
+        ),
+        conic-gradient(
+            red,
+            orange,
+            gold,
+            yellowgreen,
+            dodgerblue,
+            purple,
+            red
+        );
+
     font-size:1em;
     color: #E0B000;
     box-shadow: 0 0 20px black;
